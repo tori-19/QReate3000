@@ -4,12 +4,10 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-# Home route to render the HTML form
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# Route to generate the QR code
 @app.route('/generate', methods=['POST'])
 def generate_qr():
     if request.method == 'POST':
