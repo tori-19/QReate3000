@@ -1,46 +1,48 @@
-Description
+**Description**
+
 QReate is a simple web application that allows users to generate QR codes from links or text. 
-This project uses Flask for the backend for handling dynamic QR code display.
+This project uses Flask for the backend and JavaScript for handling dynamic QR code display 
+without page reloads.
 
-Features
+**Features**
 
-Convert any URL or text into a QR code.
+  Convert any URL or text into a QR code.
 
-Dynamically display the QR code.
+  Dynamically display the QR code.  
 
-Simple and clean user interface.
+  Simple and clean user interface.
 
-Technologies Used
+**Technologies Used**
 
-Backend: Flask (Python)
+  Backend: Flask (Python)
 
-Frontend: HTML, CSS
+  Frontend: HTML, CSS, javaScript
 
-QR Code Generation: qrcode Python library
+  QR Code Generation: qrcode Python library
 
-Installation
+**Installation**
 
 Prerequisites
 
-Ensure you have Python installed. 
+  Ensure you have Python installed. 
 
-Setup
+**Setup**
 
-Clone the repository:
+  Clone the repository:
 
-git clone https://github.com/yourusername/qreate.git
-cd qreate
+  git clone https://github.com/yourusername/qreate.git
+  cd qreate
 
-Create a virtual environment (optional but recommended):
+  Create a virtual environment (optional but recommended):
+  
+  python -m venv venv
+  source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
-Install dependencies:
+**Install dependencies:**
 
   pip install flask qrcode[pil] pillow
 
-Running the Application
+**Running the Application**
 
 Start the Flask server:
 
@@ -50,7 +52,7 @@ Open your browser and go to:
 
   http://127.0.0.1:5000/
 
-Project Structure
+**Project Structure**
 
 qreate/
 │-- static/
@@ -60,7 +62,7 @@ qreate/
 │-- app.py           # Flask backend
 │-- README.md        # Project documentation
 
-Usage
+**Usage**
 
  1. Enter a URL or text into the input field.
  2. Click the "Generate QR Code" button.
